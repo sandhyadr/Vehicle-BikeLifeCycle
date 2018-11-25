@@ -1,0 +1,79 @@
+ # Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+# ---------------------------------------------------------------------------
+# "OrdererOrgs" - Definition of organizations managing orderer nodes
+# ---------------------------------------------------------------------------
+OrdererOrgs:
+  # ---------------------------------------------------------------------------
+  # Orderer
+  # ---------------------------------------------------------------------------
+  - Name: Orderer
+    Domain: example.com
+    Specs:
+      - Hostname: orderer
+# ---------------------------------------------------------------------------
+# "PeerOrgs" - Definition of organizations managing peer nodes
+# ---------------------------------------------------------------------------
+PeerOrgs:
+  # ---------------------------------------------------------------------------
+  # Org1
+  # ---------------------------------------------------------------------------
+  - Name: Manufacturer
+    Domain: Manufacturer.vlm.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+  # ---------------------------------------------------------------------------
+  # Org2: See "Org1" for full specification
+  # ---------------------------------------------------------------------------
+  - Name: Dealer
+    Domain: Dealer.vlm.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+# ---------------------------------------------------------------------------
+  # Org3: See "Org1" for full specification
+  # ---------------------------------------------------------------------------
+  - Name: RTO
+    Domain: RTO.vlm.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+# ---------------------------------------------------------------------------
+  # Org4: See "Org1" for full specification
+  # ---------------------------------------------------------------------------
+  - Name: Insurer
+    Domain: Insurer.vlm.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+# ---------------------------------------------------------------------------
+  # Org5: See "Org1" for full specification
+  # ---------------------------------------------------------------------------
+  - Name: Scrapper
+    Domain: Scrapper.vlm.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+---------------------------------------------------------------------------
+  # Org6: See "Org1" for full specification
+  # ---------------------------------------------------------------------------
+  -Name: Supplier
+   Domain: Supplier.vlm.com
+   EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
